@@ -6,6 +6,7 @@
 
 package taylf;
 
+import gui.AFDWindow;
 import gui.MainWindow;
 import gui.MenuGui;
 
@@ -22,11 +23,12 @@ public class TAYLF {
         // TODO code application logic here
         
         
+//        AFDWindow aFDWindow= new AFDWindow();
+//  
+//        aFDWindow.setVisible(true);
+        
         MainWindow mainWindow= new MainWindow();
-  
-        
-        
-        
+        mainWindow.setVisible(true);
      
     }
     

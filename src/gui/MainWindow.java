@@ -6,7 +6,7 @@
 
 package gui;
 
-import java.awt.HeadlessException;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 
 /**
@@ -14,30 +14,28 @@ import javax.swing.JFrame;
  * @author Fernando Anzola
  */
 public class MainWindow extends JFrame{
-
-   private MenuGui menuGui;
+    
+   private JButton buttonAFD;
+   private Events events;
     
     public MainWindow() {
         
         setTitle("Teoria de automatas y lenguajes formales");
-        setSize(500, 500);
+        setSize(300,200);
         setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(null);
-        setVisible(true);
         setLocationRelativeTo(null);
         
+        events= new Events();
         
-        menuGui= new MenuGui();
-        setJMenuBar(menuGui);
         
-    }
-    
-    
-    
-    
-    
-    
-    
-    
+        buttonAFD= new JButton("Automatas Finitos Deterministas");
+        buttonAFD.setBounds(0, 0, 300, 30);
+        buttonAFD.setActionCommand(Events.BUTTON_AFD);
+        buttonAFD.addActionListener(events);
+        this.add(buttonAFD);
+        
+  
+}
 }

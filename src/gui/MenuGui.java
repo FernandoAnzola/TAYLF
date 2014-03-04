@@ -12,7 +12,7 @@ import javax.swing.JMenuItem;
 
 /**
  *
- * @author Usuario
+ * @author Fernando Anzola
  */
 public class MenuGui extends JMenuBar{
 
@@ -24,9 +24,7 @@ public class MenuGui extends JMenuBar{
     
     public MenuGui() {
     
-        setSize(500, 30);
-        setLocation(0, 0);
-      
+          
         
         menuFile = new JMenu("File");
         menuAbout= new JMenu("About");
